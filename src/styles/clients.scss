@@ -1,0 +1,38 @@
+.clients {
+    margin-bottom: 90px;
+    padding: 0 42px;
+    
+    &__title {
+        font-family: "LagunaC";
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+        letter-spacing: -2%;
+        color: var(--green);
+        user-select: none;
+        margin-bottom: 46px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 120px;
+        row-gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        height: 140px;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:first-of-type img {
+            border-radius: 15px;
+        }
+    }
+}

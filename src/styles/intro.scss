@@ -1,0 +1,47 @@
+.intro {
+    margin-bottom: 100px;
+
+    &__text {
+        max-width: 1389px;
+        height: 96px;
+        margin: 0 auto 37px auto;
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    &__lefttext {
+        align-self: flex-start;
+        font-family: "LagunaC";
+
+        span {
+            font-family: "LagunaC";
+        }
+    }
+
+    &__righttext {
+        align-self: flex-end;
+        font-family: "LagunaC";
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+    }
+
+    &__marquee {
+        height: 44px;
+        border: 2px solid var(--green);
+        border-left: none;
+        border-right: none;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        white-space: nowrap;
+        color: var(--green);
+        font-weight: 500;
+    }
+}

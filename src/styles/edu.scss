@@ -1,0 +1,14 @@
+.edu {
+    margin-bottom: 110px;
+    padding: 0 42px;
+    
+    &__title {
+        font-family: "LagunaC";
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+        letter-spacing: -2%;
+        color: var(--green);
+        user-select: none;
+    }
+}
