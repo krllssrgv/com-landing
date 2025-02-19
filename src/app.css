@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --white: #f5f3f2;
+  --green: #376a3a;
+  --black: #02060f;
+  --main-background: #fffcf0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--main-background);
+}
+
+.container {
+  width: 1512px;
+  margin: 0 auto;
+}
