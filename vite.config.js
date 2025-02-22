@@ -1,3 +1,6 @@
 export default {
-  base: "/com-landing/",
+  base: "./",
+  build: {
+    outDir: "docs",
+  },
 };
