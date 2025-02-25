@@ -27,6 +27,8 @@
   padding: 0;
   margin: 0;
   font-family: "Onest";
+  letter-spacing: -0.02em;
+  overflow-x: hidden;
 }
 
 :root {
@@ -37,13 +39,12 @@
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
   background-color: var(--main-background);
 }
 
 .container {
-  width: 1512px;
+  max-width: 1512px;
+  width: 100%;
   margin: 0 auto;
 }
 
