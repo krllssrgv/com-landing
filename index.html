@@ -1,264 +1,519 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Название</title>
-  </head>
-  <body>
-    <div class="container">
-      <!-- Header -->
-      <header class="header">
-        <nav class="header__nav">
-          <a href="" class="header__link header__link--active">обо мне</a>
-          <a href="" class="header__link">курсы</a>
-          <a href="" class="header__link">отзывы</a>
-          <a href="" class="header__link">контакты</a>
-        </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Название</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <div class="header__burger"></div>
+                <nav class="header__nav">
+                    <a href="" class="header__link header__link--active"
+                        >обо мне</a
+                    >
+                    <a href="" class="header__link">курсы</a>
+                    <a href="" class="header__link">отзывы</a>
+                    <a href="" class="header__link">контакты</a>
+                </nav>
 
-        <button class="header__register">
-          записаться &#10230;
-        </button>
-      </header>
+                <button class="header__register">записаться &#10230;</button>
+            </header>
 
-      <!-- Intro -->
-      <section class="intro">
-        <div class="intro__text">
-          <div class="intro__lefttext">Привет, я Елизавета - твой <span class="green_text">наставник</span></div>
-          <div class="intro__righttext">в искусстве коммуникаций</div>
-        </div>
-        <img src="/images/backgrounds/hands.png" alt="hands" class="intro__image">
-        <div class="intro__marquee">
-          • решение конфликтов • ведение переговоров • скорость принятия решения • работа с публикой • работа с давлением • умение отстаивать свою точку зрения • аргументация • ретроспективный анализ • оценивание рисков • принятие решений • умение слушать&nbsp;
-        </div>
-      </section>
+            <!-- Intro -->
+            <section class="intro">
+                <div class="intro__text">
+                    <div class="intro__lefttext">
+                        Привет, я Елизавета - твой
+                        <span class="green_text">наставник</span>
+                    </div>
+                    <div class="intro__righttext">в искусстве коммуникаций</div>
+                </div>
+                <div class="intro__text--mobile">
+                    Привет, я Лиза - твой
+                    <span class="green_text">наставник</span> в искусстве
+                    коммуникаций
+                </div>
+                <div class="intro__image">
+                    <img src="/images/backgrounds/hands.png" alt="hands" />
+                </div>
+                <div class="intro__marquee">
+                    <span>
+                        • решение конфликтов • ведение переговоров • скорость
+                        принятия решения • работа с публикой • работа с
+                        давлением • умение отстаивать свою точку зрения •
+                        аргументация • ретроспективный анализ • оценивание
+                        рисков • принятие решений • умение слушать&nbsp;
+                    </span>
+                    <span>
+                        • решение конфликтов • ведение переговоров • скорость
+                        принятия решения • работа с публикой • работа с
+                        давлением • умение отстаивать свою точку зрения •
+                        аргументация • ретроспективный анализ • оценивание
+                        рисков • принятие решений • умение слушать&nbsp;
+                    </span>
+                </div>
+            </section>
 
-      <!-- About -->
-      <section class="about">
-        <div class="about__content">
-          <h2 class="about__title">Давай познакомимся</h2>
-          <p class="about__text">
-            Меня зовут Вычужанина Елизавета, я <span class="green_text">преподаватель по коммуникациям</span> в ВШЭ и программы "MOOVE Skolkovo". Я провожу индивидуальные и групповые занятия, читаю лекции в ВШЭ, региональных институтах, «Точках кипения» и на профессиональных тренингах. 
-          </p>
-          <p class="about__text">
-            Я искренне ценю образование и постоянно расширяю свои знания. Поэтому мои курсы основаны на <span class="green_text">научном подходе</span> и <span class="green_text">современных методиках</span>, что обеспечивает долгосрочные результаты.
-          </p>
-          <p class="about__text"><span class="green_text">На мои курсах вы научитесь:</span></p>
-          <div class="about__skills">
-            <ul>
-              <li class="about__item">анализировать речь и поведение собеседника</li>
-              <li class="about__item">применять навыки активного слушания</li>
-            </ul>
-            <ul>
-              <li class="about__item">преодолевать страх конфликтов</li>
-              <li class="about__item">отстаивать личные границы</li>
-              <li class="about__item">избегать манипуляций</li>
-            </ul>
-          </div>
-          <div class="about__achievements">
-            <div class="about__point">
-              <div>7</div>
-              <div>лет</div>
-              <div>преподавания</div>
-            </div>
-            <div class="about__point">
-              <div>400</div>
-              <div>выпускников</div>
-              <div>со всего мира</div>
-            </div>
-            <div class="about__point">
-              <div>6</div>
-              <div>уникальных</div>
-              <div>продуктов</div>
-            </div>
-          </div>
-        </div>
+            <!-- About -->
+            <section class="about">
+                <div class="about__content">
+                    <h2 class="about__title">Давай познакомимся</h2>
+                    <div class="about__images--mobile">
+                        <img src="/images/personal/first.jpg" alt="" />
+                        <img src="/images/personal/second.jpg" alt="" />
+                    </div>
+                    <p class="about__text">
+                        Меня зовут Вычужанина Елизавета, я
+                        <span class="green_text"
+                            >преподаватель по коммуникациям</span
+                        >
+                        в ВШЭ и программы "MOOVE Skolkovo". Я провожу
+                        индивидуальные и групповые занятия, читаю лекции в ВШЭ,
+                        региональных институтах, «Точках кипения» и на
+                        профессиональных тренингах.
+                    </p>
+                    <p class="about__text">
+                        Я искренне ценю образование и постоянно расширяю свои
+                        знания. Поэтому мои курсы основаны на
+                        <span class="green_text">научном подходе</span> и
+                        <span class="green_text">современных методиках</span>,
+                        что обеспечивает долгосрочные результаты.
+                    </p>
+                    <p class="about__text">
+                        <span class="green_text"
+                            >На мои курсах вы научитесь:</span
+                        >
+                    </p>
+                    <div class="about__skills">
+                        <ul>
+                            <li class="about__item">
+                                анализировать речь и поведение собеседника
+                            </li>
+                            <li class="about__item">
+                                применять навыки активного слушания
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="about__item">
+                                преодолевать страх конфликтов
+                            </li>
+                            <li class="about__item">
+                                отстаивать личные границы
+                            </li>
+                            <li class="about__item">избегать манипуляций</li>
+                        </ul>
+                    </div>
+                    <div class="about__achievements">
+                        <div class="about__point">
+                            <div>7</div>
+                            <div>лет</div>
+                            <div>преподавания</div>
+                        </div>
+                        <div class="about__point">
+                            <div>400</div>
+                            <div>выпускников</div>
+                            <div>со всего мира</div>
+                        </div>
+                        <div class="about__point">
+                            <div>6</div>
+                            <div>уникальных</div>
+                            <div>продуктов</div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="about__images">
-          <img src="/images/personal/first.jpg" alt="" class="about__first">
-          <div class="about__second">
-            <img src="/images/personal/second.jpg" alt="" >
-          </div>
-        </div>
-      </section>
+                <div class="about__images">
+                    <img
+                        src="/images/personal/first.jpg"
+                        alt=""
+                        class="about__first"
+                    />
+                    <div class="about__second">
+                        <img src="/images/personal/second.jpg" alt="" />
+                    </div>
+                </div>
+            </section>
 
-      <!-- Certificates -->
-      <section class="certificates">
-        <img src="/images/certificates/c1.jpg" alt="" class="certificates__image">
-        <img src="/images/certificates/c2.jpg" alt="" class="certificates__image">
-        <img src="/images/certificates/c3.png" alt="" class="certificates__image">
-        <img src="/images/certificates/c4.jpg" alt="" class="certificates__image">
-        <img src="/images/certificates/c5.jpg" alt="" class="certificates__image">
-      </section>
+            <!-- Certificates -->
+            <section class="certificates">
+                <img
+                    src="/images/certificates/c1.jpg"
+                    alt=""
+                    class="certificates__image"
+                />
+                <img
+                    src="/images/certificates/c2.jpg"
+                    alt=""
+                    class="certificates__image"
+                />
+                <img
+                    src="/images/certificates/c3.png"
+                    alt=""
+                    class="certificates__image"
+                />
+                <img
+                    src="/images/certificates/c4.jpg"
+                    alt=""
+                    class="certificates__image"
+                />
+                <img
+                    src="/images/certificates/c5.jpg"
+                    alt=""
+                    class="certificates__image"
+                />
+            </section>
 
-      <!-- Patterns -->
-      <section class="patterns">
-        <div class="patterns__title">
-          <div class="patterns__lefttext">Изучай искусство общения</span></div>
-          <div class="patterns__righttext">вместе со мной</div>
-        </div>
-        <div class="patterns__blocks">
-          <div class="patterns__element">
-            <div class="patterns__content">
-              <div class="patterns__name">Работа с манипуляциями собеседника</div>
-              <div class="patterns__text">Для тех, кто знает свои границы, но не знает как отстоять их в момент конфликта</div>
-            </div>
-            <button class="patterns__link"><img src="/images/icons/to-pattern.png" alt=""></button>
-          </div>
-          <div class="patterns__element">
-            <div class="patterns__content">
-              <div class="patterns__name">Ведение переговоров</div>
-              <div class="patterns__text">Для тех, кто понимает необходимый результат от переговоров, но не знает как его достичь</div>
-            </div>
-            <button class="patterns__link"><img src="/images/icons/to-pattern.svg" alt=""></button>
-          </div>
-          <div class="patterns__element">
-            <div class="patterns__content patterns__content--up">
-              <div class="patterns__name">Введение в конфликты и понимание работы мозга</div>
-              <div class="patterns__text">Для тех, кто хочет понимать себя и уметь отстаивать свои границы</div>
-            </div>
-            <button class="patterns__link"><img src="/images/icons/to-pattern.svg" alt=""></button>
-          </div>
-          <div class="patterns__element">
-            <div class="patterns__content">
-              <div class="patterns__name">Тестирование паттернов</div>
-              <div class="patterns__text">Для нахождения точек роста и самостоятельной работы</div>
-            </div>
-            <button class="patterns__link"><img src="/images/icons/to-pattern.svg" alt=""></button>
-          </div>
-          <div class="patterns__element">
-            <div class="patterns__content patterns__content--up">
-              <div class="patterns__name">Тестирование soft skills</div>
-              <div class="patterns__text">Для нахождения точек роста и самостоятельной работы</div>
-            </div>
-            <button class="patterns__link"><img src="/images/icons/to-pattern.svg" alt=""></button>
-          </div>
-          <div class="patterns__element">
-            <div class="patterns__content">
-              <div class="patterns__name">Консалтинг</div>
-              <div class="patterns__text">Если у вас есть неординарный запрос</div>
-            </div>
-            <button class="patterns__link"><img src="/images/icons/to-pattern.svg" alt=""></button>
-          </div>
-        </div>
-      </section>
+            <!-- Patterns -->
+            <section class="patterns">
+                <div class="patterns__title">
+                    <div class="patterns__lefttext">
+                        Изучай искусство общения
+                    </div>
+                    <div class="patterns__righttext">вместе со мной</div>
+                </div>
+                <div class="patterns__title--mobile">
+                    Изучай искусство общения вместе со мной
+                </div>
+                <div class="patterns__blocks">
+                    <div class="patterns__element">
+                        <div class="patterns__content">
+                            <div class="patterns__name">
+                                Работа с манипуляциями собеседника
+                            </div>
+                            <div class="patterns__text">
+                                Для тех, кто знает свои границы, но не знает как
+                                отстоять их в момент конфликта
+                            </div>
+                        </div>
+                        <button class="patterns__link">
+                            <img src="/images/icons/to-pattern.png" alt="" />
+                        </button>
+                    </div>
+                    <div class="patterns__element">
+                        <div class="patterns__content">
+                            <div class="patterns__name">
+                                Ведение переговоров
+                            </div>
+                            <div class="patterns__text">
+                                Для тех, кто понимает необходимый результат от
+                                переговоров, но не знает как его достичь
+                            </div>
+                        </div>
+                        <button class="patterns__link">
+                            <img src="/images/icons/to-pattern.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="patterns__element">
+                        <div class="patterns__content patterns__content--up">
+                            <div class="patterns__name">
+                                Введение в конфликты и понимание работы мозга
+                            </div>
+                            <div class="patterns__text">
+                                Для тех, кто хочет понимать себя и уметь
+                                отстаивать свои границы
+                            </div>
+                        </div>
+                        <button class="patterns__link">
+                            <img src="/images/icons/to-pattern.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="patterns__element">
+                        <div class="patterns__content">
+                            <div class="patterns__name">
+                                Тестирование паттернов
+                            </div>
+                            <div class="patterns__text">
+                                Для нахождения точек роста и самостоятельной
+                                работы
+                            </div>
+                        </div>
+                        <button class="patterns__link">
+                            <img src="/images/icons/to-pattern.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="patterns__element">
+                        <div class="patterns__content patterns__content--up">
+                            <div class="patterns__name">
+                                Тестирование soft skills
+                            </div>
+                            <div class="patterns__text">
+                                Для нахождения точек роста и самостоятельной
+                                работы
+                            </div>
+                        </div>
+                        <button class="patterns__link">
+                            <img src="/images/icons/to-pattern.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="patterns__element">
+                        <div class="patterns__content">
+                            <div class="patterns__name">Консалтинг</div>
+                            <div class="patterns__text">
+                                Если у вас есть неординарный запрос
+                            </div>
+                        </div>
+                        <button class="patterns__link">
+                            <img src="/images/icons/to-pattern.svg" alt="" />
+                        </button>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Edu -->
-      <section class="edu">
-        <h2 class="edu__title">Как проходит обучение</h2>
-        <div class="edu__content">
-          <div class="edu__paragraph">
-            <p class="edu__headlines green_text">Знакомство</p>
-            <p class="edu__text">Изучение программы, тестирование первоначальных навыков софт-скиллс и постановка цели на обучение </p>
-          </div>
-          <div class="edu__paragraph">
-            <p class="edu__headlines green_text">Изучение теории</p>
-            <p class="edu__text">Лекционная часть, посвященная фундаментальным знаниям в области коммуникаций —  учимся понимать принцип переговоров</p>
-          </div>
-          <div class="edu__paragraph">
-            <p class="edu__headlines green_text">Практические занятия</p>
-            <p class="edu__text">Отработка полученных знаний — ученики отыгрывают реальные бизнес-кейсы, затем на основе обратной связи улучшают эффективность коммуникации </p>
-          </div>
-          <div class="edu__paragraph">
-            <p class="edu__headlines green_text">Работа над паттернами</p>
-            <p class="edu__text">Находим привычные, но мешающие коммуникациям паттерны и работаем над ними, применяя знания о мозге</p>
-          </div>
-          <img src="/images/icons/acquaintance.png" alt="" class="edu__icons">
-          <img src="/images/icons/studying.png" alt="" class="edu__icons">
-          <img src="/images/icons/practice.png" alt="" class="edu__icons">
-          <img src="/images/icons/patterns.png" alt="" class="edu__icons">
-          <div class="edu__line">
-            <div class="edu__points">1</div>
-            <div class="edu__dotted"></div>
-            <div class="edu__points">2</div>
-            <div class="edu__dotted"></div>
-            <div class="edu__points">3</div>
-            <div class="edu__dotted"></div>
-            <div class="edu__points">4</div>
-          </div>
-        </div>
-      </section>
+            <!-- Edu -->
+            <section class="edu">
+                <h2 class="edu__title">Как проходит обучение</h2>
+                <div class="edu__content">
+                    <div class="edu__paragraph">
+                        <p class="edu__headlines green_text">Знакомство</p>
+                        <p class="edu__text">
+                            Изучение программы, тестирование первоначальных
+                            навыков софт-скиллс и постановка цели на обучение 
+                        </p>
+                    </div>
+                    <div class="edu__paragraph">
+                        <p class="edu__headlines green_text">Изучение теории</p>
+                        <p class="edu__text">
+                            Лекционная часть, посвященная фундаментальным
+                            знаниям в области коммуникаций — учимся понимать
+                            принцип переговоров
+                        </p>
+                    </div>
+                    <div class="edu__paragraph">
+                        <p class="edu__headlines green_text">
+                            Практические занятия
+                        </p>
+                        <p class="edu__text">
+                            Отработка полученных знаний — ученики отыгрывают
+                            реальные бизнес-кейсы, затем на основе обратной
+                            связи улучшают эффективность коммуникации
+                        </p>
+                    </div>
+                    <div class="edu__paragraph">
+                        <p class="edu__headlines green_text">
+                            Работа над паттернами
+                        </p>
+                        <p class="edu__text">
+                            Находим привычные, но мешающие коммуникациям
+                            паттерны и работаем над ними, применяя знания о
+                            мозге
+                        </p>
+                    </div>
+                    <img
+                        src="/images/icons/acquaintance.png"
+                        alt=""
+                        class="edu__icons"
+                    />
+                    <img
+                        src="/images/icons/studying.png"
+                        alt=""
+                        class="edu__icons"
+                    />
+                    <img
+                        src="/images/icons/practice.png"
+                        alt=""
+                        class="edu__icons"
+                    />
+                    <img
+                        src="/images/icons/patterns.png"
+                        alt=""
+                        class="edu__icons"
+                    />
+                    <div class="edu__line">
+                        <div class="edu__points">1</div>
+                        <div class="edu__dotted"></div>
+                        <div class="edu__points">2</div>
+                        <div class="edu__dotted"></div>
+                        <div class="edu__points">3</div>
+                        <div class="edu__dotted"></div>
+                        <div class="edu__points">4</div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Clients -->
-      <section class="clients">
-        <h2 class="clients__title">Среди моих клиентов</h2>
-        <div class="clients__content">
-          <div class="clients__logo"><img src="images/companies/alpha.png" alt="Альфа Банк"></div>
-          <div class="clients__logo"><img src="images/companies/skb.png" alt="СКБ Контур"></div>
-          <div class="clients__logo"><img src="images/companies/hse.png" alt="ВШЭ"></div>
-          <div class="clients__logo"><img src="images/companies/mgtu.png" alt="МГТУ им. Баумана"></div>
-          <div class="clients__logo"><img src="images/companies/yurgu.png" alt="ЮУрГУ"></div>
-          <div class="clients__logo"><img src="images/companies/ssl.png" alt="Soft Skills Lab"></div>
-          <div class="clients__logo"><img src="images/companies/che.png" alt=""></div>
-          <div class="clients__logo"><img src="images/companies/papa.png" alt="Papa John`s"></div>
-        </div>
-      </section>
+            <!-- Clients -->
+            <section class="clients">
+                <h2 class="clients__title">Среди моих клиентов</h2>
+                <div class="clients__content">
+                    <div class="clients__logo">
+                        <img
+                            src="images/companies/alpha.png"
+                            alt="Альфа Банк"
+                        />
+                    </div>
+                    <div class="clients__logo">
+                        <img src="images/companies/skb.png" alt="СКБ Контур" />
+                    </div>
+                    <div class="clients__logo">
+                        <img src="images/companies/hse.png" alt="ВШЭ" />
+                    </div>
+                    <div class="clients__logo">
+                        <img
+                            src="images/companies/mgtu.png"
+                            alt="МГТУ им. Баумана"
+                        />
+                    </div>
+                    <div class="clients__logo">
+                        <img src="images/companies/yurgu.png" alt="ЮУрГУ" />
+                    </div>
+                    <div class="clients__logo">
+                        <img
+                            src="images/companies/ssl.png"
+                            alt="Soft Skills Lab"
+                        />
+                    </div>
+                    <div class="clients__logo">
+                        <img src="images/companies/che.png" alt="" />
+                    </div>
+                    <div class="clients__logo">
+                        <img
+                            src="images/companies/papa.png"
+                            alt="Papa John`s"
+                        />
+                    </div>
+                </div>
+            </section>
 
-      <!-- Reviews -->
-      <section class="reviews">
-        <h2 class="reviews__title">Что говорят студенты о моих курсах</h2>
-        <div class="reviews__content">
-          <div class="reviews__block">
-            <div class="reviews__person">
-              <img src="/images/personal/review1.jpg" alt="" class="reviews__portrait">
-              <div>
-                <p class="reviews__name">Виктория<br>Лозовая</p>
-                <p class="reviews__position">продюсер</p>
-              </div>
-            </div>
-            <div class="reviews__text">
-              <p>Во-первых, спасибо тебе - ты боженька переговоров! Когда я только пришла к тебе, очень боялась переговоров, было тяжело отстаивать свое мнение - особенно в эмоциональных конфликтах. Сейчас уже намного легче, хотя все же бывают ситуации, когда я теряюсь, но благодаря тебе это уже не воспринимается так остро.</p>
-              <p>Отдельно хочу отметить, что работать с тобой легко и комфортно, даже когда я теряю позиции в кейсах - это не обидно, потому что после ты классно объясняешь, где я свернула не туда, и как было бы лучше сделать. Остается приятное послевкусие даже после поражений, не говоря уж о победах.</p>
-              <p>Еще понравилось большое количество практики, для меня это было важно! Классно что все кейсы различны - как рабочие, так и из повседневной жизни. И еще классно, что я смогла разобрать ситуации из жизни.</p>
-            </div>
-          </div>
-          <div class="reviews__block">
-            <div class="reviews__video"></div>
-            <p class="reviews__fullname">Елизавета Цыкунова</p>
-            <p class="reviews__position">сооснователь и CEO сети облачных кухонь</p>
-          </div>
-          <div class="reviews__block">
-            <div class="reviews__person">
-              <img src="/images/personal/review2.png" alt="" class="reviews__portrait">
-              <div>
-                <div class="reviews__name">Екатерина<br>Романенко</div>
-                <div class="reviews__position">руководитель направления в Сбере</div>
-              </div>
-            </div>
-            <div class="reviews__text">
-              <p>Лиза, спасибо огромное за сегодняшнюю встречу!</p>
-              <p>У меня даже случился инсайт - лет 8 назад один мой руководитель сказал, что мне не подняться на высокий уровень руководителей, пока я не избавлюсь от своей доброты к людям.</p>
-              <p>Тогда я восприняла эту фразу в штыки, не признавая, что для карьерного роста мне нужно становиться злой. И благодаря занятиям с тобой я поняла, что не нужно избавляться от доброты и эмпатии к людям; наоборот, нужно и важно их применять.</p>
-              <p>А в дальнейшем есть второй шаг - обязательно расставить всё по правильным местам и ролям рабочего процесса. Для меня это очень крутой результат!</p>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- Reviews -->
+            <section class="reviews">
+                <h2 class="reviews__title">
+                    Что говорят студенты о моих курсах
+                </h2>
+                <div class="reviews__content">
+                    <div class="reviews__block" id="first_review">
+                        <div class="reviews__person">
+                            <img
+                                src="/images/personal/review1.jpg"
+                                alt=""
+                                class="reviews__portrait"
+                            />
+                            <div>
+                                <p class="reviews__name">
+                                    Виктория<br />Лозовая
+                                </p>
+                                <p class="reviews__position">продюсер</p>
+                            </div>
+                        </div>
+                        <div class="reviews__text">
+                            <p>
+                                Во-первых, спасибо тебе - ты боженька
+                                переговоров! Когда я только пришла к тебе, очень
+                                боялась переговоров, было тяжело отстаивать свое
+                                мнение - особенно в эмоциональных конфликтах.
+                                Сейчас уже намного легче, хотя все же бывают
+                                ситуации, когда я теряюсь, но благодаря тебе это
+                                уже не воспринимается так остро.
+                            </p>
+                            <p>
+                                Отдельно хочу отметить, что работать с тобой
+                                легко и комфортно, даже когда я теряю позиции в
+                                кейсах - это не обидно, потому что после ты
+                                классно объясняешь, где я свернула не туда, и
+                                как было бы лучше сделать. Остается приятное
+                                послевкусие даже после поражений, не говоря уж о
+                                победах.
+                            </p>
+                            <p>
+                                Еще понравилось большое количество практики, для
+                                меня это было важно! Классно что все кейсы
+                                различны - как рабочие, так и из повседневной
+                                жизни. И еще классно, что я смогла разобрать
+                                ситуации из жизни.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews__block" id="second_review">
+                        <div class="reviews__video"></div>
+                        <p class="reviews__fullname">Елизавета Цыкунова</p>
+                        <p class="reviews__position">
+                            сооснователь и CEO сети облачных кухонь
+                        </p>
+                    </div>
+                    <div class="reviews__block" id="third_review">
+                        <div class="reviews__person">
+                            <img
+                                src="/images/personal/review2.png"
+                                alt=""
+                                class="reviews__portrait"
+                            />
+                            <div>
+                                <div class="reviews__name">
+                                    Екатерина<br />Романенко
+                                </div>
+                                <div class="reviews__position">
+                                    руководитель направления в Сбере
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__text">
+                            <p>
+                                Лиза, спасибо огромное за сегодняшнюю встречу!
+                            </p>
+                            <p>
+                                У меня даже случился инсайт - лет 8 назад один
+                                мой руководитель сказал, что мне не подняться на
+                                высокий уровень руководителей, пока я не
+                                избавлюсь от своей доброты к людям.
+                            </p>
+                            <p>
+                                Тогда я восприняла эту фразу в штыки, не
+                                признавая, что для карьерного роста мне нужно
+                                становиться злой. И благодаря занятиям с тобой я
+                                поняла, что не нужно избавляться от доброты и
+                                эмпатии к людям; наоборот, нужно и важно их
+                                применять.
+                            </p>
+                            <p>
+                                А в дальнейшем есть второй шаг - обязательно
+                                расставить всё по правильным местам и ролям
+                                рабочего процесса. Для меня это очень крутой
+                                результат!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Request -->
-      <section id="request" class="request">
-        <div class="request__headline">
-          Хочешь прокачать<br>навыки коммуникации<br>или появились вопросы?
-        </div>
-        <div class="request__inputs">
-          <div class="request__phrase">Оставайся на связи</div>
-          <form action="">
-            <input type="text" placeholder="Как тебя зовут" class="request__input">
-            <input type="text" placeholder="Электронная почта" class="request__input">
-            <select name="" class="request__select">
-            </select>
-            <button type="submit" class="request__submit">Связаться</button>
-          </form>
-        </div>
-      </section>
+            <!-- Request -->
+            <section id="request" class="request">
+                <div class="request__headline">
+                    Хочешь прокачать<br />навыки коммуникации<br />или появились
+                    вопросы?
+                </div>
+                <div class="request__inputs">
+                    <div class="request__phrase">Оставайся на связи</div>
+                    <form action="">
+                        <input
+                            type="text"
+                            placeholder="Как тебя зовут"
+                            class="request__input"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Электронная почта"
+                            class="request__input"
+                        />
+                        <select name="" class="request__select"></select>
+                        <button type="submit" class="request__submit">
+                            Связаться
+                        </button>
+                    </form>
+                </div>
+            </section>
 
-      <!-- Footer -->
-      <footer class="footer">
-        <img src="/images/icons/tg.png" alt="telegram" class="footer__tg">
-        <div class="footer__email">eliza99vc@gmail.com</div>
-      </footer>
-    </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+            <!-- Footer -->
+            <footer class="footer">
+                <img
+                    src="/images/icons/tg.png"
+                    alt="telegram"
+                    class="footer__tg"
+                />
+                <div class="footer__email">eliza99vc@gmail.com</div>
+            </footer>
+        </div>
+        <script type="module" src="/src/main.js"></script>
+    </body>
 </html>

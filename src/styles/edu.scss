@@ -1,9 +1,9 @@
 .edu {
     margin-bottom: 110px;
     padding: 0 42px;
-    
+
     &__title {
-        font-family: "LagunaC";
+        font-family: 'LagunaC';
         font-weight: 700;
         font-size: 35px;
         line-height: 40px;
@@ -19,10 +19,10 @@
         row-gap: 20px;
         column-gap: 40px;
         grid-template-areas:
-            "i1 line t1"
-            "t2 line i2"
-            "i3 line t3"
-            "t4 line i4";
+            'i1 line t1'
+            't2 line i2'
+            'i3 line t3'
+            't4 line i4';
     }
 
     &__paragraph {
@@ -56,12 +56,12 @@
     &__text {
         font-weight: 400;
         font-size: 20px;
-        line-height: 30px;        
+        line-height: 30px;
     }
 
     &__icons {
         display: block;
-        align-self: center;       
+        align-self: center;
 
         &:nth-of-type(1) {
             grid-area: i1;
@@ -109,5 +109,70 @@
         width: 0;
         flex-grow: 0.25;
         border-left: 4px dotted var(--green);
+    }
+}
+
+@media (max-width: 768px) {
+    .edu {
+        margin-bottom: 51px;
+        padding: 0 20px;
+
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            grid-auto-rows: 1fr;
+            row-gap: 40px;
+            column-gap: 15px;
+            grid-template-areas:
+                'line t1'
+                'line t2'
+                'line t3'
+                'line t4';
+        }
+
+        &__paragraph {
+            align-self: center;
+
+            &:nth-of-type(1) {
+                grid-area: t1;
+            }
+
+            &:nth-of-type(2) {
+                grid-area: t2;
+                text-align-last: left;
+            }
+
+            &:nth-of-type(3) {
+                grid-area: t3;
+            }
+
+            &:nth-of-type(4) {
+                grid-area: t4;
+                text-align: left;
+            }
+        }
+
+        &__headlines {
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            font-size: 15px;
+            line-height: 20px;
+            max-width: 430px;
+            text-align: left;
+        }
+
+        &__icons {
+            display: none;
+        }
     }
 }
