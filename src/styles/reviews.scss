@@ -1,13 +1,160 @@
 .reviews {
     margin-bottom: 137px;
     padding: 0 42px;
-    
+
     &__title {
-        font-family: "LagunaC";
+        font-family: 'LagunaC';
         font-weight: 700;
         font-size: 35px;
         line-height: 40px;
-        letter-spacing: -2%;
         color: var(--green);
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        overflow-x: auto;
+    }
+
+    &__block {
+        width: 461px;
+        height: 616px;
+        border-radius: 10px;
+        border: 1px solid var(--green);
+        padding: 25px;
+        flex-shrink: 0;
+    }
+
+    &__person {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+        margin-bottom: 16px;
+    }
+
+    &__portrait {
+        display: block;
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    &__name {
+        color: var(--green);
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 6px;
+    }
+
+    &__position {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__video {
+        height: 498px;
+        background-color: black;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    &__fullname {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+        color: var(--green);
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        margin-bottom: 90px;
+        padding: 0 20px;
+
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 35px;
+        }
+
+        &__content {
+            overflow-x: hidden;
+            justify-content: center;
+        }
+
+        &__block {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            flex-shrink: 1;
+        }
+
+        &__person {
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        &__portrait {
+            display: block;
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        &__name {
+            margin-bottom: 15px;
+        }
+
+        &__text {
+            text-align: center;
+
+            p {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        &__video {
+            height: 498px;
+            background-color: black;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        &__fullname {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 40px;
+            color: var(--green);
+            margin-bottom: 5px;
+        }
+    }
+
+    #second_review,
+    #third_review {
+        display: none;
     }
 }

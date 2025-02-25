@@ -10,25 +10,34 @@
         font-weight: 700;
         font-size: 45px;
         line-height: 55px;
+
+        &--mobile {
+            display: none;
+        }
     }
 
     &__lefttext {
         align-self: flex-start;
-        font-family: "LagunaC";
+        font-family: 'LagunaC';
+        padding-left: 60px;
 
         span {
-            font-family: "LagunaC";
+            font-family: 'LagunaC';
         }
     }
 
     &__righttext {
         align-self: flex-end;
-        font-family: "LagunaC";
+        font-family: 'LagunaC';
+        padding-right: 60px;
     }
 
     &__image {
-        display: block;
         width: 100%;
+
+        img {
+            width: 100%;
+        }
     }
 
     &__marquee {
@@ -43,5 +52,84 @@
         white-space: nowrap;
         color: var(--green);
         font-weight: 500;
+
+        span {
+            animation: marquee 20s linear infinite;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .intro {
+        &__text {
+            display: none;
+
+            &--mobile {
+                display: block;
+                font-family: LagunaC;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 45px;
+                padding: 0 60px;
+                text-align: center;
+
+                span {
+                    font-family: LagunaC;
+                }
+            }
+        }
+
+        &__lefttext {
+            display: none;
+        }
+
+        &__righttext {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        margin-bottom: 66px;
+
+        &__text {
+            &--mobile {
+                max-width: 315px;
+                padding: 0;
+                padding-left: 20px;
+                text-align: left;
+            }
+        }
+
+        &__image {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            img {
+                transform: rotate(-40deg);
+                width: 680px;
+                height: 240px;
+                object-fit: cover;
+            }
+        }
+
+        &__marquee {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
     }
 }

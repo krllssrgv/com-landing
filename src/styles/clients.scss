@@ -1,13 +1,12 @@
 .clients {
     margin-bottom: 90px;
     padding: 0 42px;
-    
+
     &__title {
-        font-family: "LagunaC";
+        font-family: 'LagunaC';
         font-weight: 700;
         font-size: 35px;
         line-height: 40px;
-        letter-spacing: -2%;
         color: var(--green);
         user-select: none;
         margin-bottom: 46px;
@@ -33,6 +32,33 @@
 
         &:first-of-type img {
             border-radius: 15px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .clients {
+        margin-bottom: 76px;
+        padding: 0 20px;
+
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 42px;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+            row-gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        &__logo {
+            height: 70px;
         }
     }
 }
